@@ -20,6 +20,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:stretchColumns="1">
+
         <TableRow>
             <TextView
                 android:text="2/10/2018"
@@ -28,12 +29,12 @@
             <TextView
                 android:gravity="center"
                 android:padding="10dip"
-                android:text="Giant Eagle" />
+                android:text="Entropy" />
 
             <TextView
+                android:text="3% Baguette"
                 android:gravity="right"
-                android:padding="3dip"
-                android:text="14% Baguette" />
+                android:padding="3dip" />
         </TableRow>
 
         <TableRow>
@@ -51,6 +52,151 @@
                 android:gravity="right"
                 android:padding="3dip" />
         </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="1/28/2018"
+                android:padding="3dip" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Target" />
+
+            <TextView
+                android:text="13% Baguette"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="1/15/2018"
+                android:padding="3dip" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Trader Joe's" />
+
+            <TextView
+                android:text="1% Baguette"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="1/2/2018"
+                android:padding="3dip" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Giant Eagle" />
+
+            <TextView
+                android:text="20% Baguette"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="12/13/2017"
+                android:padding="3dip" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Target" />
+
+            <TextView
+                android:text="7% Baguette"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="12/10/2017"
+                android:padding="3dip" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Entropy" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="5% Baguette" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="12/3/2018"
+                android:padding="3dip" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Entropy" />
+
+            <TextView
+                android:text="2% Baguette"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="12/3/2018"
+                android:padding="3dip" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Trader Joe's" />
+
+            <TextView
+                android:text="12% Baguette"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="11/24/2018"
+                android:padding="3dip" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Entropy" />
+
+            <TextView
+                android:text="4% Baguette"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="11/22/2018"
+                android:padding="3dip" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Entropy" />
+
+            <TextView
+                android:text="6% Baguette"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
     </TableLayout>
 
 </RelativeLayout>

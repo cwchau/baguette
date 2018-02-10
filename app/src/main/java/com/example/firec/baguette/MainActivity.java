@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity
         displaySelectedScreen(R.id.nav_home);
 
         //barcode generator stuff
-        EditTextValue = "username"; //todo: edit to actual username
+        EditTextValue = "https://goo.gl/forms/raLy7l9csPghKzih2";
         try {
             bitmap = TextToImageEncode(EditTextValue);
         } catch (WriterException e) {
