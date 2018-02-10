@@ -135,7 +135,7 @@
 
         <TableRow>
             <TextView
-                android:text="12/3/2018"
+                android:text="12/3/2017"
                 android:padding="3dip" />
 
             <TextView
@@ -151,7 +151,7 @@
 
         <TableRow>
             <TextView
-                android:text="12/3/2018"
+                android:text="12/3/2017"
                 android:padding="3dip" />
 
             <TextView
@@ -167,7 +167,7 @@
 
         <TableRow>
             <TextView
-                android:text="11/24/2018"
+                android:text="11/24/2017"
                 android:padding="3dip" />
 
             <TextView
@@ -183,7 +183,7 @@
 
         <TableRow>
             <TextView
-                android:text="11/22/2018"
+                android:text="11/22/2017"
                 android:padding="3dip" />
 
             <TextView
