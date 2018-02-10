@@ -3,6 +3,9 @@ package com.example.firec.baguette;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.view.MenuItem;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -11,10 +14,10 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements
+        NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //TODO: EDIT OR DELETE
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +44,8 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        displaySelectedScreen(R.id.nav_home);
     }
 
     @Override
@@ -77,24 +83,59 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-        if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_barcode) {
 
-        } else if (id == R.id.nav_baguettes) {
+        displaySelectedScreen(item.getItemId());
 
-        } else if (id == R.id.nav_history) {
+        /**
+         int id = item.getItemId();
 
-        } else if (id == R.id.nav_profile) {
+         if (id == R.id.nav_home) {
+         //fragment = new MainActivity();
+         } else if (id == R.id.nav_barcode) {
+         //fragment = new Barcode();
+         } else if (id == R.id.nav_baguettes) {
+         //fragment = new Baguettes();
+         } else if (id == R.id.nav_history) {
+         //fragment = new History();
+         }
 
-        } else if (id == R.id.nav_settings) {
+         //NOTE:  Closing the drawer after selecting
+         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout); //Ya you can also globalize this variable :P
+         drawer.closeDrawer(GravityCompat.START);
 
+         **/
+        return true;
+    }
+
+    private void displaySelectedScreen(int itemId) {
+
+        //creating fragment object
+        Fragment fragment = null;
+
+        //initializing the fragment object which is selected
+        switch (itemId) {
+            case R.id.nav_home:
+                fragment = new Home();
+                break;
+            case R.id.nav_barcode:
+                fragment = new Barcode();
+                break;
+            case R.id.nav_baguettes:
+                fragment = new Baguettes();
+                break;
+            case R.id.nav_history:
+                fragment = new History();
+                break;
+        }
+
+        //replacing the fragment
+        if (fragment != null) {
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content_frame, fragment);
+            ft.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
 }
