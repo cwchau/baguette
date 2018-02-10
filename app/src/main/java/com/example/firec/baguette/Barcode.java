@@ -10,7 +10,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+//import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -21,7 +21,7 @@ import com.google.zxing.common.BitMatrix;
 
 public class Barcode extends Fragment {
     ImageView imageView;
-    Button button;
+    //Button button;
     EditText editText;
     String EditTextValue;
     Thread thread;
@@ -45,8 +45,15 @@ public class Barcode extends Fragment {
 
         imageView = (ImageView) view.findViewById(R.id.imageView);
         //editText = (EditText) view.findViewById(R.id.editText);
-        button = (Button) view.findViewById(R.id.button);
-
+        EditTextValue = "username"; //todo: edit to actual username
+        try {
+            bitmap = TextToImageEncode(EditTextValue);
+            imageView.setImageBitmap(bitmap);
+        } catch (WriterException e) {
+            e.printStackTrace();
+        }
+        //button = (Button) view.findViewById(R.id.button);
+/**
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,6 +66,7 @@ public class Barcode extends Fragment {
                 }
             }
         });
+ **/
     }
 
     Bitmap TextToImageEncode(String Value) throws WriterException {
