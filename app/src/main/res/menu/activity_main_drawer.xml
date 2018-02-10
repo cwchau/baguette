@@ -12,11 +12,11 @@
             android:title="Barcode" />
         <item
             android:id="@+id/nav_baguettes"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/baguette"
             android:title="Baguettes" />
         <item
             android:id="@+id/nav_history"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/shoppingbasket"
             android:title="History" />
     </group>
 
