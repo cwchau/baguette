@@ -35,9 +35,9 @@ public class Home extends Fragment {
         baguette_progress_textview.setText(baguette_progress_text);
 
         // completed baguettes
-        String baguettes_completed_text = String.valueOf(MainActivity.completed_baguettes);
-        TextView baguettes_completed_textview = (TextView) view.findViewById(R.id.textView6);
-        baguettes_completed_textview.setText(baguettes_completed_text);
+        //String baguettes_completed_text = String.valueOf(MainActivity.completed_baguettes);
+        //TextView baguettes_completed_textview = (TextView) view.findViewById(R.id.textView6);
+        //baguettes_completed_textview.setText(baguettes_completed_text);
 
         //you can set the title for your toolbar here for different fragments different titles
         getActivity().setTitle("Home");

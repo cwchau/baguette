@@ -70,18 +70,16 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_below="@+id/textView10"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="375dp"
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView11"
-        android:layout_alignBottom="@+id/textView11"
-        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginTop="375dp"
+        android:layout_marginStart="235dp"
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
 </RelativeLayout>
