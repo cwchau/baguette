@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity
         implements
         NavigationView.OnNavigationItemSelectedListener {
 
-    public static int baguette_progress = 100;
-    public static int completed_baguettes = 0;
+    public static int baguette_progress = 34;
+    public static int completed_baguettes = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
