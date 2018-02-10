@@ -10,7 +10,9 @@ package com.example.firec.baguette;
         import android.view.View;
         import android.view.ViewGroup;
         import android.widget.TextView;
+        import java.util.*;
         import com.example.firec.baguette.MainActivity.*;
+
 
 public class Home extends Fragment {
 
@@ -39,5 +41,35 @@ public class Home extends Fragment {
 
         //you can set the title for your toolbar here for different fragments different titles
         getActivity().setTitle("Home");
+
+        List<String> crumbs = new ArrayList<String>();
+        crumbs.add("The average family accumulates 60 plastic bags in only four trips to the grocery store.");
+        crumbs.add("The average reusable bag has a lifespan equal to that of more than 700 disposable plastic bags.");
+        crumbs.add("Keep your reusable bags in the car so you don't forget them!");
+        crumbs.add("Reduce, reuse, recycle!");
+        crumbs.add("You can reuse your plastic bags as garbage can liners!");
+
+        //1 means "Tip of the Day!" , 0 means "Did you know?"
+        List<Boolean> types = new ArrayList<Boolean>();
+        types.add(false);
+        types.add(false);
+        types.add(true);
+        types.add(true);
+        types.add(true);
+
+        Random r = new Random();
+        int randomIndex = r.nextInt(crumbs.size());
+
+        String message = "";
+        if (types.get(randomIndex) == false) { message = "Did you know?"; }
+        else { message = "Tip of the Day!"; }
+
+        TextView message_textview = (TextView) view.findViewById(R.id.textView9);
+        message_textview.setText(message);
+
+        String crumb = crumbs.get(randomIndex);
+        TextView crumb_textview = (TextView) view.findViewById(R.id.textView10);
+        crumb_textview.setText(crumb);
+
     }
 }

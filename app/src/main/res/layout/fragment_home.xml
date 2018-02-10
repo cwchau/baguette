@@ -19,47 +19,60 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
+        android:layout_marginTop="75dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:text="Current Baguette" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="100dp"
         android:text="%"
+        android:layout_marginStart="180dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="150dp"
         android:text="Completed Baguettes" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView5"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="175dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="100dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="315dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
+        android:gravity="center"
+
+        />
     <!--android:text="@int/baguette_progress"-->
 
     <!--
